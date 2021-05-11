@@ -4,10 +4,8 @@ A feladat tömörített mappában való elérése a következő linken keresztü
 
 Antartisz részlet
 
-Kamera mozgatása a w-a-s-d, valamint q-e betűk használatával.
-w – előre, a – hátra, s – balra, d – jobbra, q – fel, e – le
-A fényerő állítására a + és a - gombok használhatóak.
-+ fényerő növelése, - fényerő csökkentése
+Kamera mozgatása a w-a-s-d, valamint q-e betűk használatával. w – előre, a – hátra, s – balra, d – jobbra, q – fel, e – le
+A fényerő állítására a + és a - gombok használhatóak. + fényerő növelése, - fényerő csökkentése
 Az átlátszóságot az i betűvel lehetséges beállítani, viszont visszaállítani már nem lehet… Továbbá a j betűvel feketévé teszi az objektumokat.
 Az Esc gomb lenyomásával kilép a programból!
 F1 gombbal tekintheti meg az információkat!

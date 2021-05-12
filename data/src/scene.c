@@ -4,9 +4,9 @@
 #include <GL/glut.h>
 #include <time.h>
 
-double moon_y_rotation=0;
-double moon_z_rotation=0;
-double moon_rotate=0;
+double moon_y_rotation, mercury_y_rotation = 0;
+double moon_z_rotation, mercury_z_rotation = 0;
+double moon_rotate, mercury_rotate = 0;
 
 double brightness=5;
 double flash_light=5;
@@ -113,8 +113,8 @@ void draw_scene(const Scene* scene)
 
     glBindTexture(GL_TEXTURE_2D, scene->texture_mercury);	
 	glPushMatrix();
-	glRotatef(0, 0, 0+moon_rotate, 0);
-	glTranslatef(2.0, 1.0+moon_y_rotation, 1.0+moon_z_rotation);
+	glRotatef(0, 0, 0+mercury_rotate, 0);
+	glTranslatef(2.0, 1.0+mercury_y_rotation, 1.0+mercury_z_rotation);
 	glScalef(0.1, 0.1, 0.1);
 	draw_model(&(scene->mercury));
 	glPopMatrix();
@@ -135,6 +135,13 @@ void moon_movement(double time)
 	moon_z_rotation=moon_z_rotation+time/500;
 	moon_rotate=moon_rotate+time*5;	
 }		
+
+void mercury_movement(double time)
+{
+	mercury_y_rotation=mercury_y_rotation-time/800;
+	mercury_z_rotation=mercury_z_rotation+time/800;
+	mercury_rotate=mercury_rotate+time*5;	
+}	
 
 void invisible() // To invisible.
 {

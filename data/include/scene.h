@@ -39,7 +39,10 @@ void draw_scene(const Scene* scene);
 /* Update the light of the scene. */
 void update_lighting(Scene* scene, double value);
 
-/* Set the moon move of the scene. */
+/* Set the Moon move of the scene. */
 void moon_movement();
+
+/* Set the Mercury move of the scene. */
+void mercury_movement();
 
 #endif /* SCENE_H_ */

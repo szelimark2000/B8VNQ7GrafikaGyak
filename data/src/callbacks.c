@@ -23,6 +23,23 @@ void display()
         show_texture_preview();
     }
     glutSwapBuffers();
+
+    glPushMatrix();
+  glTranslatef(-1.0, -0.5, -2.0);
+  glutSolidTeapot(0.5f);
+  glPopMatrix();
+ 
+  glPushMatrix();
+  glTranslatef(0.0, -0.5, -3.5);
+  glutSolidTeapot(0.5f);
+  glPopMatrix();
+ 
+  glPushMatrix();
+  glTranslatef(1.0, -0.5, -5.0);
+  glutSolidTeapot(0.5f);
+  glPopMatrix();
+ 
+  glFlush();
 }
 
 void reshape(GLsizei width, GLsizei height)
